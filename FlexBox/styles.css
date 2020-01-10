@@ -1,0 +1,212 @@
+body{
+    background-color: black;
+}
+
+header{
+    background-color: lightseagreen;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 35px;
+    color: white;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header .nome {
+    justify-content: center;
+    margin-left: 25px;
+}
+
+header .nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+}
+
+a{
+    margin: 10px;
+    font-size: 20px;
+    font-family: cursive;
+}
+
+.imagens{
+    background-color: darkslategrey;
+    margin-bottom: 15px;
+    display: flex;
+    border-radius: 10px;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: row;
+}
+
+.img{
+    background-color: rgb(173, 236, 238);
+    margin: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.img .game{
+    margin: 5%;
+    max-width: 90%;
+    width: 500px;
+    height: 400px;
+}
+
+.imagem{
+    background-color: blue;
+    display: flex;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.img .game2{
+    margin: 5%;
+    max-width: 90%;
+    width: 800px;
+    height: 600px;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: lightseagreen;
+    border-radius: 10px;
+}
+
+footer .contato{
+    background-color: chocolate;
+    border-radius: 5px;
+    max-width: 25%;
+    width: 25%;
+    margin: 0.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .social{
+    background-color: coral;
+    border-radius: 5px;
+    max-width: 25%;
+    width: 25%;
+    margin: 0.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .direitos{
+    background-color: olivedrab;
+    border-radius: 5px;
+    max-width: 25%;
+    width: 25%;
+    margin: 0.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .bla{
+    background-color: chartreuse;
+    border-radius: 5px;
+    max-width: 25%;
+    width: 25%;
+    margin: 0.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width: 1200px){
+    .imagens{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagem .game2{
+        width: 500px;
+        height: 400px;
+    }
+}
+
+@media(max-width: 650px){
+    header{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    header .nome{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    header .nav{
+        justify-content: center;
+        padding-bottom: 15px;
+    }
+
+    a{
+        font-size: 15px;
+    }
+
+    footer{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .contato{
+        max-width: 95%;
+        width: 95%;
+        margin-top: 15px;
+    }
+
+    footer .social{
+        max-width: 95%;
+        width: 95%;
+    }
+
+    footer .direitos{
+        max-width: 95%;
+        width: 95%;
+    }
+
+    footer .bla{
+        max-width: 95%;
+        width: 95%;
+        margin-bottom: 15px;
+    }
+
+}
+
+
+@media(max-width: 550px){
+    header{
+        font-size: 25px;
+    }
+    
+    .imagens{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagens .game{
+        width: 310px;
+        height: 280px;
+    }
+
+    .imagem .game2{
+        width: 310px;
+        height: 280px;
+    }
+}
