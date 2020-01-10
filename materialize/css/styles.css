@@ -1,0 +1,18 @@
+body {
+    background-image: url(../img/praia.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.logo {
+    width: 200px;
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.fotos {
+    max-width: 100%;
+    height: auto;
+}
