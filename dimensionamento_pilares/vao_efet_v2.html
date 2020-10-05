@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+
+    <title>Dimensionamento de Pilares</title>
+</head>
+
+<body>
+    <div class="col s12 m12 l12">
+        <div class="card-panel teal darken-1">
+            <div class="row">
+                <div class="col s12 m6 l6">
+                    <a href="index.html">
+                        <h3 class="waves-effect waves-light white-text"> Dimensionamento de Pilares</h3>
+                    </a>
+                </div>
+                <div class="col s12 m6 l6 center">
+                    <a class="waves-effect waves-light btn-flat white-text"><i
+                            class="material-icons left">home</i>Home</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="col s12 m6 l6">
+            <div class="card-panel grey darken-2">
+                <div class="row">
+                    <form class="col s12 m12 l12">
+                        <h4 class="white-text">Vãos Efetivos das Vigas Sobre o Pilar</h4>
+                        <h5 class="white-text">Viga 02</h5>
+                        <p class="white-text">Os valores para a Viga 02 são calculados de forma análoga à Viga 01:</p>
+                        <h5 class="white-text center">lef, v2 = l0,v2 + a1 + a2</h5>
+                        <br>
+                        <div class="row">
+                            <div class="input-field col s4">
+                                <i class="material-icons prefix">create</i>
+                                <input type="text" id="comp_e_e_2" class="validate">
+                                <label for="comp_e_e_2" class="white-text">eixo a eixo (cm)</label>
+                            </div>
+                            <div class="input-field col s4">
+                                <i class="material-icons prefix">create</i>
+                                <input type="text" id="hy_p3" class="validate">
+                                <label for="hy_p3" class="white-text">Comprimento do Pilar 03</label>
+                            </div>
+                            <div class="input-field col s4">
+                                <input type="text" id="l0v2" disabled='disabled' placeholder="0">
+                                <label for="l0v2" class="white-text">L0, V2 (cm)</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s4">
+                                <input type="text" id="a1_v2" disabled='disabled' placeholder="0">
+                                <label for="a1_v2" class="white-text">a1 (cm)</label>
+                            </div>
+                            <div class="input-field col s4">
+                                <input type="text" id="a2_v2" disabled='disabled' placeholder="0">
+                                <label for="a2_v2" class="white-text">a2 (cm)</label>
+                            </div>
+                            <div class="input-field col s4">
+                                <input type="text" id="lefv2" disabled='disabled' placeholder="0">
+                                <label for="lefv2" class="white-text">Lef, v2 (cm)</label>
+                            </div>
+                        </div>
+                        <button class="btn waves-effect waves-light" type="button" id="Ok" onclick="vaoEfetivoV2()">Ok</button>
+                    </form>
+
+                    <ul class="pagination center">
+                        <li class="disabled"><a href="#"><i class="material-icons">chevron_left</i></a></li>
+                        <li class="waves-effect"><a href="vao_efet_v1.html">Voltar</a></li>
+                        <li class="waves-effect active"><a href="vao_efet_v2.html">Vão Efetivo Viga 02</a></li>
+                        <li class="waves-effect"><a href="momentos_viga1.html">Próximo</a></li>
+                        <li class="disabled"><a href="#"><i class="material-icons">chevron_right</i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="js/apps.js"></script>
+</body>
+
+</html>

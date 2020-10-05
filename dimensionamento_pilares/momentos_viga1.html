@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+
+    <title>Dimensionamento de Pilares</title>
+</head>
+
+<body>
+    <div class="col s12 m12 l12">
+        <div class="card-panel teal darken-1">
+            <div class="row">
+                <div class="col s12 m6 l6">
+                    <a href="index.html">
+                        <h3 class="waves-effect waves-light white-text"> Dimensionamento de Pilares</h3>
+                    </a>
+                </div>
+                <div class="col s12 m6 l6 center">
+                    <a class="waves-effect waves-light btn-flat white-text"><i
+                            class="material-icons left">home</i>Home</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="col s12 m6 l6">
+            <div class="card-panel grey darken-2">
+                <div class="row">
+                    <form class="col s12 m12 l12">
+                        <h4 class="white-text">Cálculo dos Momentos Fletores Atuantes no Pilar</h4>
+                        <h5 class="white-text">Momentos Fletores Relativos à Viga 01 - Eixo X</h5>
+                        <p class="white-text">Cálcula-se os índices de rigidez dos tramos superior e inferior do pilar e do tramo da viga vinculada ao pilar. Cálcula-se o momento de engastamento perfeito e os momentos atuantes nas barras superior e inferior do pilar.</p>
+                        <br>
+                        <h6 class="white-text">Rigidez dos Tramos Superior e Inferior do Pilar:</h6>
+                        <br>
+                        <h5 class="white-text center">r sup = r inf = (3 x Ipilar / 1/2 x Lsup)</h5>
+                        <br>
+
+                        <div class="row">
+                            <div class="input-field col s4">
+                                <input type="text" id="r_sup_inf" disabled='disabled' placeholder="0">
+                                <label for="r_sup_inf" class="white-text">r sup = r inf</label>
+                            </div>
+                        </div>
+                        <button class="btn waves-effect waves-light" type="button" id="r_sup">Ok</button>
+                    </form>
+
+                    <ul class="pagination center">
+                        <li class="disabled"><a href="#"><i class="material-icons">chevron_left</i></a></li>
+                        <li class="waves-effect"><a href="vao_efet_v2.html">Voltar</a></li>
+                        <li class="waves-effect active"><a href="momentos_viga1.html">Momentos Fletores</a></li>
+                        <li class="waves-effect"><a href="#">Próximo</a></li>
+                        <li class="disabled"><a href="#"><i class="material-icons">chevron_right</i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="js/apps.js"></script>
+</body>
+
+</html>

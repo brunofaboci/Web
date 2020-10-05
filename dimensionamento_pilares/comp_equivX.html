@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+
+    <title>Dimensionamento de Pilares</title>
+</head>
+
+<body>
+    <div class="col s12 m12 l12">
+        <div class="card-panel teal darken-1">
+            <div class="row">
+                <div class="col s12 m6 l6">
+                    <a href="index.html">
+                        <h3 class="waves-effect waves-light white-text"> Dimensionamento de Pilares</h3>
+                    </a>
+                </div>
+                <div class="col s12 m6 l6 center">
+                    <a class="waves-effect waves-light btn-flat white-text"><i
+                            class="material-icons left">home</i>Home</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="col s12 m6 l6">
+            <div class="card-panel grey darken-2">
+                <div class="row">
+                    <form class="col s12 m12 l12">
+
+                        <h4 class="white-text ">Comprimento Equivalente do Trampo do Pilar</h4>
+                        <h5 class="white-text ">Eixo X</h5>
+                        <p class="white-text ">Determinar a distância entre as faces da viga apoiada sobre o pilar, da face superior do andar I até o andar I+1</p>
+                        <div class="row">
+                            <div class="input-field col s4">
+                                <i class="material-icons prefix">create</i>
+                                <input type="text" id="h_piso" class="validate">
+                                <label for="h_piso" class="white-text">Pé direito de Piso a Piso (cm)</label>
+                            </div>
+                            <div class="input-field col s4">
+                                <i class="material-icons prefix">create</i>
+                                <input type="text" id="h_viga" class="validate">
+                                <label for="h_viga" class="white-text">Altura da Viga (cm)</label>
+                            </div>
+                            <div class="input-field col s4">
+                                <input type="text" id="l0x" placeholder="0" disabled='disabled'>
+                                <label for="l0x" class="white-text">L0x (cm)</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s3 offset-s3">
+                                <i class="material-icons prefix">create</i>
+                                <input type="text" id="hx" class="validate">
+                                <label for="hx" class="white-text">hx (cm)</label>
+                            </div>
+                            <div class="input-field col s3">
+                                <input type="text" id="lex" placeholder="0" disabled='disabled'>
+                                <label for="lex" class="white-text">lex (cm)</label>
+                            </div>
+                        </div>
+                        <button class="btn waves-effect waves-light center" type="button" id="compEquivX">Ok</button>
+                        <h5 class="white-text ">Comprimento Equivalente em X</h5>
+                        <p class="white-text ">O comprimento equivalente é o menor valor entre o comprimento livre do pilar, acrescido da dimensão do pilar na direção considerada (x), e a distância dos centros das vigas dos andares I e I+1</p>
+                        <div class="row">
+                            <div class="input-field col s4 offset-s4">
+                                <input type="text" id="lex_efetivo" placeholder="0" disabled='disabled'>
+                                <label for="lex_efetivo" class="white-text">lex efetivo(cm)</label>
+                            </div>
+                        </div>
+                    </form>
+                    <ul class="pagination center">
+                        <li class="disabled"><a href="#"><i class="material-icons">chevron_left</i></a></li>
+                        <li class="waves-effect"><a href="index.html">Voltar</a></li>
+                        <li class="waves-effect active"><a href="comp_equivX.html">Comprimento Equivalente em X</a></li>
+                        <li class="waves-effect"><a href="comp_equivY.html">Próximo</a></li>
+                        <li class="disabled"><a href="#"><i class="material-icons">chevron_right</i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/apps.js"></script>
+</body>
+
+</html>
